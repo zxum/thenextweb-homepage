@@ -112,6 +112,45 @@ body {
     }
 }
 
+@media (min-width: 1024px) {
+    .nav-logo {
+        display: none;
+    }
+    nav {
+        padding-left: 0;
+    }
+    .article-container:first-child {
+        position: relative;
+    }
+    .cover-logo {
+        color: #fff;
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        top: 24px;
+        max-height: 112px;
+        max-width: 50%;
+        height: 100%;
+        text-align: right;
+        background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+    }
+    .cover-date {
+        position: absolute;
+        right: 24px;
+        top: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media (max-width: 1023px) {
+    .cover-logo {
+        display: none;
+    }
+    .cover-date {
+        display: none;
+    }
+}
+
 nav {
     background-color: white;
     box-shadow: 0 0 32px rgba(0, 0, 0, .15);
@@ -340,12 +379,6 @@ h3.article-title-small {
         padding-left: 6px;
         margin: -10px;
     }
-    .latest-news-container {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 31%;
-        margin: 6px;
-    }
     .article-image {
         display: block;
         background-position: 50%;
@@ -360,6 +393,24 @@ h3.article-title-small {
     }
     .grouped {
         display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .latest-news-container {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 31%;
+        margin: 6px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .latest-news-container {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 23%;
+        margin: 6px;
     }
 }
 
@@ -448,8 +499,18 @@ a {
         margin: -10px;
         padding-left: 6px;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
     .startup {
         width: 31%;
+        margin: 6px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .startup {
+        width: 23%;
         margin: 6px;
     }
 }
@@ -462,8 +523,18 @@ a {
         display: flex;
         flex-flow: row wrap;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
     .category-container {
         width: 48%;
+        margin: 6px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .category-container {
+        width: 31%;
         margin: 6px;
     }
 }
