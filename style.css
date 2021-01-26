@@ -1,0 +1,775 @@
+/* font-family: 'Abel', sans-serif;
+
+font-family: 'Exo', sans-serif;
+
+font-family: 'Open Sans Condensed', sans-serif;
+
+font-family: 'Poppins', sans-serif;
+
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Roboto Condensed', sans-serif;
+
+font-family: 'Source Sans Pro', sans-serif; */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAV SECTION */
+
+@media (min-width: 768px) {
+    nav {
+        padding-left: 106px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .nav-extra {
+        display: block;
+        background-color: #131313;
+        position: relative;
+        line-height: 32px;
+        max-height: 32px;
+        font-size: .8rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    .nav-extra ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .nav-extra ul li {
+        display: inline;
+        color: hsla(0, 0%, 100%, .6);
+        margin-left: 8px;
+    }
+    .nav-extra ul li:first-child {
+        margin-left: 20px;
+    }
+    .nav-extra ul .company-links {
+        float: right;
+        margin-right: 20px;
+    }
+    .nav-extra .tiny {
+        font-size: 0.5rem;
+    }
+    .nav-extra:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .bar-menu {
+        display: none;
+    }
+    .nav-categories .nav-sections {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        margin-left: 20px;
+    }
+    .nav-categories .nav-sections li {
+        list-style: none;
+        float: left;
+        font-family: 'Abel', sans-serif;
+        position: relative;
+        padding: 15px 20px 0 0;
+        color: #aaa;
+        font-size: 0.9rem;
+        font-weight: bold;
+        display: block;
+        height: 48px;
+        box-sizing: border-box;
+    }
+    .nav-logo img {
+        height: 80px;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        height: 48px;
+    }
+    .nav-extra {
+        display: none;
+    }
+    .fa-bars {
+        color: #f42;
+        display: block;
+    }
+    .nav-categories .nav-sections {
+        display: none;
+    }
+    .nav-logo img {
+        height: 48px;
+    }
+}
+
+nav {
+    background-color: white;
+    box-shadow: 0 0 32px rgba(0, 0, 0, .15);
+}
+
+nav .nav-categories {
+    border-left: rgb(211, 211, 211);
+    height: 48px;
+}
+
+nav .nav-categories .nav-icons {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-categories .icon {
+    border-left: 1px solid #eee;
+    padding: 16px;
+    float: left;
+}
+
+nav .nav-categories .icon i {
+    display: block;
+}
+
+.fa-search {
+    color: rgb(184, 184, 184);
+    display: block;
+}
+
+.nav-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    background-color: #000;
+    padding: 16px 20px;
+    width: 106px;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+}
+
+
+/* FEATURED SECTION */
+
+.featured {
+    color: white;
+    margin-bottom: 60px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .featured {
+        margin-top: 104px;
+        height: 60vh;
+    }
+    #bangkok-transport {
+        float: left;
+        height: 102%;
+        width: 65%;
+        box-sizing: border-box;
+    }
+    #drones-florida {
+        float: left;
+        height: 50%;
+        width: 32%;
+        box-sizing: border-box;
+    }
+    #astro-quasar {
+        float: left;
+        height: 50%;
+        width: 32%;
+        box-sizing: border-box;
+    }
+    .article-container {
+        margin: 0.25rem;
+    }
+    .category.hide {
+        display: none;
+    }
+    .article-container:first-child .article-title {
+        font-size: 2em;
+    }
+    span.share {
+        display: none;
+    }
+    .featured span.article-info {
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media (max-width: 767px) {
+    .article-container {
+        margin: 0.4rem;
+    }
+}
+
+.article-container {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 30vh;
+    width: auto;
+}
+
+#bangkok-transport {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1-copy-30-796x417.jpg);
+}
+
+#drones-florida {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1-copy-31-796x417.jpg);
+}
+
+#astro-quasar {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1-copy-34-796x417.jpg);
+}
+
+.category {
+    font-family: 'Abel', sans-serif;
+}
+
+.article-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.article-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: .85rem;
+    line-height: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.article-info i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.latest-news,
+.latest-funding {
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1.section-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #f42;
+}
+
+.latest-news-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.article-image {
+    min-width: 75px;
+    height: 75px;
+    background-position: 50%;
+    background-size: cover;
+    margin-right: .8rem;
+}
+
+.latest-news-container span.article-info {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.8rem;
+}
+
+#a1 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Screenshot-2021-01-20-at-13.13.44-540x259.png);
+}
+
+#a2 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Stone-River-540x270.jpg);
+}
+
+#a3 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/solen-feyissa-KWZa42a1kds-unsplash-405x270.jpg);
+}
+
+#a4 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/gridserve-uk.-ready-charging-ev-motorway-services-roadchef-welcome-break-cars-480x270.png);
+}
+
+#a5 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Untitled-design-2021-01-20T115451.869-516x270.png);
+}
+
+#a6 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Screenshot-2021-01-20-at-4.15.33-PM-e1611139604103-512x270.png);
+}
+
+#a7 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/conversation-marketing-meeting-gq-516x270.png);
+}
+
+#a8 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1-copy-33-516x270.jpg);
+}
+
+h3.article-title-small {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .latest-news-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: 6px;
+        margin: -10px;
+    }
+    .latest-news-container {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 31%;
+        margin: 6px;
+    }
+    .article-image {
+        display: block;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 0;
+        padding-top: 50%;
+        width: 100%;
+        margin-bottom: 8px;
+        position: relative;
+        overflow: hidden;
+    }
+    .grouped {
+        display: block;
+    }
+}
+
+
+/* STARTUPS SECTION */
+
+a.orange {
+    display: block;
+    color: #f42;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.startup {
+    background: #fffaf8;
+    margin-top: 1rem;
+}
+
+.startup img {
+    height: 60px;
+    width: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    float: left;
+    margin: 1rem;
+}
+
+.company-name {
+    background-color: #f42;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+}
+
+.company-name h3,
+.investment h4,
+.investment p {
+    margin: 0;
+}
+
+.investment {
+    background-color: rgba(255, 68, 34, .08);
+    color: black;
+    height: 60px;
+    padding: 10.667px;
+    box-sizing: border-box;
+}
+
+.series {
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.75rem;
+}
+
+.info {
+    padding: 0 1rem;
+    font-size: .85rem;
+    color: #555;
+    border-bottom: 1px solid rgba(255, 68, 34, .25);
+}
+
+.info .fas {
+    color: black;
+    padding-right: 8px;
+}
+
+.description {
+    padding: 0 1rem 0.3rem 1rem;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .startup-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        margin: -10px;
+        padding-left: 6px;
+    }
+    .startup {
+        width: 31%;
+        margin: 6px;
+    }
+}
+
+
+/* CATEGORIES SECTION */
+
+@media (min-width: 768px) {
+    .categories-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .category-container {
+        width: 48%;
+        margin: 6px;
+    }
+}
+
+.categories {
+    margin: 1rem;
+}
+
+.category-container .article-container {
+    margin: 0;
+}
+
+.latest-block {
+    display: flex;
+    justify-content: stretch;
+    margin-top: 2px;
+}
+
+.latest-block .grouped p {
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f42;
+    font-weight: bold;
+}
+
+.latest-block .grouped p.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.latest-block .grouped {
+    flex: 1;
+    padding: .5rem;
+    background-color: rgba(255, 68, 34, .06);
+    box-sizing: border-box;
+}
+
+#b1 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1280px-20th_Anniversary_Schwab_Foundation_Gala_Dinner_44887783681-e1611132397581-368x276.jpg);
+}
+
+#b2 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/google-chrome-old-icon-368x276.png);
+}
+
+#b3 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Qualcomm-Snapdragon-870-368x276.jpg);
+}
+
+#b4 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/09/angryrobot-368x276.jpg);
+}
+
+#b5 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/Untitled-design-13-368x276.png);
+}
+
+#b6 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/open-source-code-gq-368x276.png);
+}
+
+#b7 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/conversation-marketing-meeting-gq-368x276.png);
+}
+
+#b8 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/toyota-suv-new-ev-car-future-electric-japan-368x276.jpg);
+}
+
+#b9 {
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/bloodlines-368x276.jpg);
+}
+
+.latest-image {
+    min-width: 96px;
+    height: 96px;
+    background-position: 50%;
+    background-size: cover;
+}
+
+#c1 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Trump-Twitter.jpg);
+}
+
+#c2 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Untitled-design-2020-10-01T165604.930.png);
+}
+
+#c3 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Eye-strain-screen-time-hed.jpg);
+}
+
+#c4 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/sadrobot.jpg);
+}
+
+#c5 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13.jpg);
+}
+
+#c6 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/google-logo-podium.png);
+}
+
+#c7 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/twitter-tesla-elon-musk-nicekl-back-car-ev-future-battery-tech.png);
+}
+
+#c8 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/hummer-ev-future-car-love-hate-next-gmc-gm-ultium.jpg);
+}
+
+#c9 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/stellaris_hearts.jpg);
+}
+
+.article-list {
+    padding-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+
+.article-list li {
+    border-bottom: 1px solid #eee;
+    padding: 0.3rem;
+}
+
+.article-list li::marker {
+    color: #f42;
+    font-weight: bold;
+}
+
+
+/* LATEST DEALS SECTION */
+
+@media (min-width: 768px) {
+    .deals-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        margin: -10px;
+    }
+    .deals-wrapper .latest-news-container {
+        position: relative;
+    }
+    .deals-wrapper .latest-news-container .article-image {
+        padding-top: 74.5%;
+    }
+    .deal-discount {
+        background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 80px;
+        width: 80px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .deal-discount p {
+        transform: rotate(45deg);
+        font-size: 0.9rem;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        position: relative;
+        top: 8px;
+        width: 100%;
+        left: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .deal-discount {
+        display: none;
+    }
+}
+
+.latest-deals {
+    margin: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.deals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.deals-header span {
+    vertical-align: bottom;
+    margin-bottom: 23.904px;
+}
+
+#d1 {
+    background-image: url(https://cdnp3.stackassets.com/131a74f7d56643b61ee30fb3e8da705c53031bed/store/b32bf58c9865347773f96c04f56c69f07227e61baeb48f8ffffec4861e5e/sale_18296_primary_image.jpg);
+}
+
+#d2 {
+    background-image: url(https://cdnp1.stackassets.com/d70d575440dc2303f6c0f578f6546cc872eb2b6b/store/bc8a1c7c761aaedca8d2eb395cf9fccb9e15aadd0d764277c827cda8ada8/sale_26801_primary_image.jpg);
+}
+
+#d3 {
+    background-image: url(https://cdnp2.stackassets.com/7a5a98dff30d5c38ecbc1700812eb2e1b93dce93/store/4b1f63289bd195a7bbafafbe36579fe597a5f1e7a0cb8165012908f3db74/sale_28088_primary_image.jpg);
+}
+
+#d4 {
+    background-image: url(https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg);
+}
+
+#d5 {
+    background-image: url(https://cdnp0.stackassets.com/7aa9d7cf44164e0851355035cc4a86e1687e4fd6/store/b823f4b4e3485a8a2343c1a1a75c7d011c0fab4841d8d1c6b44418f2dbd0/sale_163163_primary_image.jpg);
+}
+
+#d6 {
+    background-image: url(https://cdnp3.stackassets.com/1ce9b5e7afdcdd63a87d67d709a87ff735114cdd/store/3d847ed1b1c50758b3e478d2bbadfa527516bf72fa57658c5e8f7ffcc3f9/sale_162647_primary_image.jpg);
+}
+
+#d7 {
+    background-image: url(https://cdnp0.stackassets.com/e141550c999c132327f2f00cb788dcc2ccc577e7/store/e1fb1627b025bee071a77917080660c37c5d4a52cb6ac7984b0ab1096e46/product_21571_product_shots5_image.jpg);
+}
+
+#d8 {
+    background-image: url(https://cdnp3.stackassets.com/a5375b69cf78e259898721abeb3fa538acb39ef1/store/45af0bad475ab039a41ed05a199dff46db44d5558e1756182cd98ceb4a35/sale_162279_primary_image.jpg);
+}
+
+.article-info {
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.article-info del {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #aaa;
+}
+
+footer {
+    background: #131313;
+    color: #aaa;
+    padding: 40px 0 10px 0;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons i {
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+    background-color: #333;
+    margin: 0 6px;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0 15px 0;
+}
+
+.links ul li {
+    float: left;
+    padding: 5px;
+}
+
+.links ul li a {
+    display: block;
+    color: #aaa;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 0.85rem;
+}
+
+.copyright span img {
+    display: inline-block;
+    height: 9px;
+    margin-right: 1px;
+    vertical-align: baseline;
+}
+
+.copyright {
+    padding: 2em;
+    background: black;
+}
+
+.copyright p {
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa;
+    text-align: center;
+}
